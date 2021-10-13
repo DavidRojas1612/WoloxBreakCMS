@@ -62,27 +62,6 @@ export const query = graphql`
             }
           }
         }
-        customers: body {
-          ... on PrismicAboutDataBodyCustomerLogos {
-            id
-            items {
-              logo {
-                fluid(maxWidth: 200) {
-                ...GatsbyPrismicImageFluid
-                }
-                alt
-              }
-            }
-            primary {
-              eyebrow_headline {
-                html
-                raw
-                text
-              }
-            }
-            slice_type
-          }
-        }
         title {
           html
           text
