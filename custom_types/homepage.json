@@ -1,0 +1,160 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "uid"
+      }
+    },
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label" : "title",
+        "placeholder" : "home page title"
+      }
+    },
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : null,
+        "choices" : {
+          "call_to_action" : {
+            "type" : "Slice",
+            "fieldset" : "Section to action",
+            "description" : "A predesigned 'Call to action'",
+            "icon" : "notifications_active",
+            "display" : "list",
+            "non-repeat" : {
+              "icon_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Icon Image"
+                }
+              },
+              "title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label" : "Title"
+                }
+              },
+              "paragraph" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label" : "Paragraph"
+                }
+              },
+              "button_link" : {
+                "type" : "Link",
+                "config" : {
+                  "label" : "Button Link",
+                  "select" : null
+                }
+              },
+              "button_label" : {
+                "type" : "Text",
+                "config" : {
+                  "label" : "Button Label",
+                  "placeholder" : "Text for button"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "customer_logos" : {
+            "type" : "Slice",
+            "fieldset" : "Customer logos",
+            "description" : "Display a list of your customers logos",
+            "icon" : "person",
+            "display" : "list",
+            "non-repeat" : {
+              "eyebrow_headline" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2",
+                  "label" : "Eyebrow Headline",
+                  "placeholder" : "Trusted by"
+                }
+              },
+              "call_to_action" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph",
+                  "label" : "Call To Action",
+                  "placeholder" : "View customer stories"
+                }
+              },
+              "call_to_action_link" : {
+                "type" : "Link",
+                "config" : {
+                  "allowTargetBlank" : true,
+                  "label" : "Call to Action Link",
+                  "placeholder" : "Could be a signup link, or a link to customer stories",
+                  "select" : null
+                }
+              }
+            },
+            "repeat" : {
+              "logo" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Logo"
+                }
+              },
+              "link" : {
+                "type" : "Link",
+                "config" : {
+                  "allowTargetBlank" : true,
+                  "label" : "link",
+                  "placeholder" : "Could be a link to use case, press article, signup...",
+                  "select" : null
+                }
+              }
+            }
+          },
+          "footer" : {
+            "type" : "Slice",
+            "fieldset" : "Footer",
+            "description" : "Footer page",
+            "icon" : "card_travel",
+            "display" : "list",
+            "non-repeat" : {
+              "footer_title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label" : "footer title",
+                  "placeholder" : "Title footer"
+                }
+              }
+            },
+            "repeat" : {
+              "social_icon" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "social icon"
+                }
+              },
+              "social_link" : {
+                "type" : "Link",
+                "config" : {
+                  "label" : "social link",
+                  "select" : null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
